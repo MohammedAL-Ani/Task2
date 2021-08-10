@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ddd"
+
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:layout_constraintEnd_toStartOf="@id/imgvideo"
+        app:layout_constraintStart_toStartOf="@id/imgvideo"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titlevideo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="my video title"
+        android:textColor="#fff"
+        app:layout_constraintBaseline_toBottomOf="@id/imgvideo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgvideo" />
+
+    <!--   <ImageView-->
+    <!--        android:id="@+id/imgvideo1"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="361dp"-->
+    <!--        android:src="@drawable/ddd"-->
+    <!--       app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--       app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/titlevideo1"-->
+    <!--        android:layout_width="245dp"-->
+    <!--        android:layout_height="91dp"-->
+
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        android:text="my video title"-->
+    <!--        android:textColor="#fff"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imgvideo1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/imgvideo1"-->
+    <!--        tools:layout_editor_absoluteX="169dp" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imgicon1"-->
+    <!--        android:layout_width="20dp"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:src="@drawable/ic_baseline_play_arrow_24"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="@id/titlevideo1"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/titlevideo1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--         />-->
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
